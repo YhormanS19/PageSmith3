@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoeStyle - Tu Calzado Urbano</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">ShoeStyle</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" data-nav-target="hero">Inicio</a></li>
+                    <li><a href="#" data-nav-target="featured-products">Colección</a></li>
+                    <li><a href="#" data-category-filter="hombre">Hombres</a></li>
+                    <li><a href="#" data-category-filter="mujer">Mujeres</a></li>
+                    <li><a href="#" data-category-filter="deportivo">Deportivas</a></li>
+                    <li><a href="#" data-nav-target="footer-section">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon-container">
+                <i class="fas fa-shopping-cart cart-icon" id="cart-icon"></i>
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="container">
+                <h2>Define tu paso. Define tu estilo.</h2>
+                <p>Descubre nuestra exclusiva selección de calzado urbano y streetwear.</p>
+                <button class="btn" id="shopNowBtn">Ver Colección</button>
+            </div>
+        </section>
+
+        <section class="featured-products" id="featured-products">
+            <div class="container">
+                <h3 id="products-heading">Lo Más Vendido</h3>
+                <div class="product-grid" id="product-grid">
+                    <div class="product-card" data-category="hombre deportivo">
+                        <img src="https://images.unsplash.com/photo-1596462502278-27adff1691a9?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sneaker Urbano Gris">
+                        <h4>Sneaker Urbano "Horizon"</h4>
+                        <p class="price" data-price="89.99">$89.99</p>
+                        <button class="add-to-cart-btn" data-product="Sneaker Urbano Horizon" data-product-id="prod001">Agregar al Carrito</button>
+                    </div>
+                    <div class="product-card" data-category="mujer casual">
+                        <img src="https://images.unsplash.com/photo-1606107555050-6d0c2738a169?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Zapatilla Blanca Clásica">
+                        <h4>Zapatilla Clásica "Eclipse"</h4>
+                        <p class="price" data-price="75.00">$75.00</p>
+                        <button class="add-to-cart-btn" data-product="Zapatilla Clásica Eclipse" data-product-id="prod002">Agregar al Carrito</button>
+                    </div>
+                    <div class="product-card" data-category="hombre botas">
+                        <img src="https://images.unsplash.com/photo-1610477163363-2b2dfc83690d?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Botín Lifestyle Negro">
+                        <h4>Botín Lifestyle "Street"</h4>
+                        <p class="price" data-price="110.50">$110.50</p>
+                        <button class="add-to-cart-btn" data-product="Botín Lifestyle Street" data-product-id="prod003">Agregar al Carrito</button>
+                    </div>
+                    <div class="product-card" data-category="deportivo unisex">
+                        <img src="https://images.unsplash.com/photo-1600269455953-b26a454d4838?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Zapatilla Deportiva High-Top">
+                        <h4>Runner Deportivo "Vortex"</h4>
+                        <p class="price" data-price="105.00">$105.00</p>
+                        <button class="add-to-cart-btn" data-product="Runner Deportivo Vortex" data-product-id="prod004">Agregar al Carrito</button>
+                    </div>
+                     <div class="product-card" data-category="mujer deportivo">
+                        <img src="https://images.unsplash.com/photo-1549298828-522d0d6a2a06?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Zapatilla Deportiva Rosa">
+                        <h4>Zapatilla "Flow" Rosa</h4>
+                        <p class="price" data-price="95.00">$95.00</p>
+                        <button class="add-to-cart-btn" data-product="Zapatilla Flow Rosa" data-product-id="prod005">Agregar al Carrito</button>
+                    </div>
+                    <div class="product-card" data-category="hombre casual">
+                        <img src="https://images.unsplash.com/photo-1560769629-9f27d0c3e986?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Zapato Casual Marrón">
+                        <h4>Zapato Casual "Urban"</h4>
+                        <p class="price" data-price="80.00">$80.00</p>
+                        <button class="add-to-cart-btn" data-product="Zapato Casual Urban" data-product-id="prod006">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact-section">
+            <div class="container">
+                <h3>Contáctanos</h3>
+                <p>¿Tienes alguna pregunta o necesitas ayuda? ¡Estamos aquí para asistirte!</p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer-section">
+        <div class="container">
+            <p>&copy; 2023 ShoeStyle. Todos los derechos reservados.</p>
+            <p>Diseñado por Tu Nombre/Empresa</p>
+        </div>
+    </footer>
+
+    <div class="cart-overlay" id="cart-overlay">
+        <div class="cart-sidebar" id="cart-sidebar">
+            <div class="cart-header">
+                <h3>Tu Carrito</h3>
+                <button class="close-cart-btn" id="close-cart-btn">&times;</button>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <p class="empty-cart-message">Tu carrito está vacío.</p>
+            </div>
+            <div class="cart-footer">
+                <p>Total: $<span id="cart-total">0.00</span></p>
+                <button class="checkout-btn">Finalizar Compra</button>
+                <button class="clear-cart-btn" id="clear-cart-btn">Vaciar Carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
